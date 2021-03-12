@@ -1,0 +1,26 @@
+{
+  "name": "quiz-game-johnson-wang",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.32.8"
+  },
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build-prod": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/staten-island-tech/quiz-game-johnson-wang.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/staten-island-tech/quiz-game-johnson-wang/issues"
+  },
+  "homepage": "https://github.com/staten-island-tech/quiz-game-johnson-wang#readme"
+}
