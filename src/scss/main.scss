@@ -59,6 +59,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  display: none;
 }
 
 .question-box {
@@ -67,7 +68,7 @@ body {
   transform: translateY(100%);
 }
 
-#questionNo {
+#question-no {
   font-size: 4rem;
   color: white;
 }
@@ -106,9 +107,9 @@ body {
   cursor: pointer;
 }
 
-#nextBtn {
+#next-btn {
   font-size: 2.5rem;
-  color: red;
+  color: black;
   background-color: skyblue;
   border: solid 2px blue;
   border-radius: 1rem;
@@ -118,4 +119,13 @@ body {
   outline: none;
   cursor: pointer;
   transform: translate(100%, 200%);
+}
+
+.choice:hover {
+  box-shadow: 6px 4px 3px blue;
+  transform: scale(1.1);
+}
+
+#next-btn:hover {
+  color: white;
 }
