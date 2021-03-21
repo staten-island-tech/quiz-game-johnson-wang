@@ -23,6 +23,9 @@ function showQuestions() {
 
 showQuestions();
 
-// DOMSelectors.nextBtn.addEventListener('click', () => {
-
-// })
+DOMSelectors.nextBtn.addEventListener("click", () => {
+  if (index <= questions.length - 2) {
+    index++;
+    showQuestions();
+  }
+});
