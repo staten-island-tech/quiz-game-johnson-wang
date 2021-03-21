@@ -24,8 +24,11 @@ function showQuestions() {
 showQuestions();
 
 DOMSelectors.nextBtn.addEventListener("click", () => {
-  if (index <= questions.length - 2) {
+  if (index < questions.length - 1) {
     index++;
     showQuestions();
+  } else {
+    DOMSelectors.quizGame.style.display = "none";
+    DOMSelectors.endPage.style.display = "flex";
   }
 });
