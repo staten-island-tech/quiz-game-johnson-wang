@@ -9,6 +9,9 @@ const DOMSelectors = {
   nextBtn: document.querySelector("#next-btn"),
   score: document.querySelector("#score"),
   retake: document.querySelector("#retake-btn"),
+  landing: document.querySelector("#landing"),
+  quizGame: document.querySelector("#quiz-game"),
+  endPage: document.querySelector("#end"),
 };
 
 export { DOMSelectors };
