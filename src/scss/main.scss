@@ -111,6 +111,10 @@ body {
   cursor: pointer;
 }
 
+.disabled {
+  background-color: none;
+}
+
 #next-btn {
   font-size: 2.5rem;
   color: black;

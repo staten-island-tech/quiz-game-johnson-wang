@@ -1,6 +1,5 @@
 const DOMSelectors = {
   start: document.querySelector("#btn"),
-  questionNo: document.querySelector("#question-no"),
   quizQuestion: document.querySelector("#question"),
   choice1: document.querySelector("#choice1"),
   choice2: document.querySelector("#choice2"),
@@ -12,6 +11,8 @@ const DOMSelectors = {
   landing: document.querySelector("#landing"),
   quizGame: document.querySelector("#quiz-game"),
   endPage: document.querySelector("#end"),
+  choices: document.querySelectorAll("#choices .choice"),
+  scoreBoard: document.querySelector("#score-board"),
 };
 
 export { DOMSelectors };

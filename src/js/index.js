@@ -13,7 +13,6 @@ DOMSelectors.start.addEventListener("click", () => {
 
 //shows the questions and choices
 function showQuestions() {
-  DOMSelectors.questionNo.innerHTML = index + 1 + ". ";
   DOMSelectors.quizQuestion.innerHTML = questions[index].question;
   DOMSelectors.choice1.innerHTML = questions[index].choices[0];
   DOMSelectors.choice2.innerHTML = questions[index].choices[1];
@@ -23,6 +22,7 @@ function showQuestions() {
 
 showQuestions();
 
+//when next button is clicked, moves on to the next index until max index is reached
 DOMSelectors.nextBtn.addEventListener("click", () => {
   if (index < questions.length - 1) {
     index++;
@@ -31,4 +31,25 @@ DOMSelectors.nextBtn.addEventListener("click", () => {
     DOMSelectors.quizGame.style.display = "none";
     DOMSelectors.endPage.style.display = "flex";
   }
+  // Array.from(DOMSelectors.choices).forEach((choices) => {
+  //   choices.style.backgroundColor = "none";
+  // });
+  DOMSelectors.scoreBoard.innerHTML = `You Scored: ${score}/${questions.length}`;
+});
+
+Array.from(DOMSelectors.choices).forEach(function (choice) {
+  choice.addEventListener("click", function (e) {
+    const selectedTarget = e.target;
+    const selectedChoice = selectedTarget.innerHTML;
+    if (selectedChoice === questions[index].answer) {
+      selectedTarget.style.backgroundColor = "green";
+      score++;
+    } else {
+      selectedTarget.style.backgroundColor = "red";
+    }
+
+    // for (i = 0; i <= 3; i++) {
+    //   DOMSelectors.choices[i].classList.add("disabled");
+    // }
+  });
 });
