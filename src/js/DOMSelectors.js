@@ -11,7 +11,7 @@ const DOMSelectors = {
   landing: document.querySelector("#landing"),
   quizGame: document.querySelector("#quiz-game"),
   endPage: document.querySelector("#end"),
-  choices: document.querySelectorAll("#choices .choice"),
+  choices: document.querySelectorAll(".choice"),
   scoreBoard: document.querySelector("#score-board"),
 };
 

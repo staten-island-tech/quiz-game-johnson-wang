@@ -5,11 +5,7 @@ import { questions } from "./questions";
 let score = 0;
 let index = 0;
 
-// function stop() {
-//   DOMSelectors.start.classList.add("disabled");
-// }
-// stop();
-//switches from the landing page to the quiz page
+//switches from landing page to quiz page
 DOMSelectors.start.addEventListener("click", () => {
   DOMSelectors.landing.style.display = "none";
   DOMSelectors.quizGame.style.display = "flex";
@@ -38,6 +34,9 @@ DOMSelectors.nextBtn.addEventListener("click", () => {
   Array.from(DOMSelectors.choices).forEach(function (choice) {
     choice.style.backgroundColor = "rgb(44, 42, 42)";
   });
+  for (let i = 0; i <= 3; i++) {
+    DOMSelectors.choices[i].classList.remove("disabled");
+  }
   DOMSelectors.scoreBoard.innerHTML = `You Scored: ${score}/${questions.length}`;
 });
 
@@ -50,7 +49,9 @@ Array.from(DOMSelectors.choices).forEach(function (choice) {
       score++;
     } else {
       selectedTarget.style.backgroundColor = "red";
-      selectedTarget.classList.add("disabled");
+    }
+    for (let i = 0; i <= 3; i++) {
+      DOMSelectors.choices[i].classList.add("disabled");
     }
   });
 });
