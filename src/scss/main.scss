@@ -112,7 +112,7 @@ body {
 }
 
 .disabled {
-  background-color: none;
+  pointer-events: none;
 }
 
 #next-btn {
