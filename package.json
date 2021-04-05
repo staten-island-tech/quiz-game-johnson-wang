@@ -2,7 +2,7 @@
   "name": "quiz-game-johnson-wang",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.html",
   "dependencies": {},
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0-beta.2",
