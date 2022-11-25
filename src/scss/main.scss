@@ -1,3 +1,5 @@
+@import "_mixins.scss";
+
 html,
 body {
   padding: 0;
@@ -8,8 +10,8 @@ body {
 
 .quiz {
   // background-color: steelblue;
-  background: url("../img//back.jpg");background-size: cover;
-
+  background: url("../img//back.jpg");
+  background-size: cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,6 +27,7 @@ body {
   // transform: translate(110%, 30%);
   text-align: center;
   background-color: rgb(44, 42, 42);
+  // background-color: $primary;
   // background-color: ;
   padding: 1rem;
   display: flex;
@@ -32,6 +35,7 @@ body {
   align-items: center;
   border-radius: 0.5rem;
   // display: none;
+
 }
 
 .title {
@@ -208,4 +212,18 @@ body {
 
 #retake-btn:active {
   transform: scale(1.05);
+}
+
+@media only screen and (min-width: 481px) {
+  #landing{
+    width: 50vw;
+  }
+
+  .quiz-game{
+    width: 60%;
+  }
+
+  .choice{
+    width: 14rem;
+  }
 }
