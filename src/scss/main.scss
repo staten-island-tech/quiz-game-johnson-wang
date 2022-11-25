@@ -7,27 +7,33 @@ body {
 }
 
 .quiz {
-  background-color: steelblue;
+  // background-color: steelblue;
+  background: url("../img//back.jpg");background-size: cover;
+
   height: 100vh;
+  // object-fit: cover;
+
 }
 
 #landing {
   width: 30vw;
-  height: 50vh;
-  transform: translate(110%, 50%);
+  height: 60vh;
+  transform: translate(110%, 30%);
   text-align: center;
   background-color: rgb(44, 42, 42);
+  // background-color: ;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 0.5rem;
   // display: none;
 }
 
 .title {
   // display: flex;
   // flex-direction: column;
-  font-size: 5rem;
+  font-size: 4rem;
   display: block;
   color: white;
   transform: translateY(30%);
@@ -47,6 +53,7 @@ body {
   transition: 0.3s;
   cursor: pointer;
   margin: 1rem;
+  z-index: 4;
 }
 
 #btn:hover {
@@ -55,21 +62,23 @@ body {
 
 #quiz-game {
   width: 30vw;
-  height: 50vh;
-  transform: translate(110%, 50%);
+  height: 60vh;
+  transform: translate(110%, 30%);
   text-align: center;
   background-color: rgb(44, 42, 42);
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  // justify-content: space-around;
   display: none;
+  border-radius: 0.5rem;
 }
 
 .question-box {
   display: flex;
   flex-direction: row;
-  transform: translateY(100%);
+  // transform: translateY(100%);
 }
 
 #question-no {
@@ -78,13 +87,13 @@ body {
 }
 
 #question {
-  font-size: 4rem;
+  font-size: 2rem;
   color: white;
 }
 
 #choices {
-  // justify-content: space-around;
-  transform: translateY(50%);
+  // justify-content: center;
+  transform: translateY(30%);
 }
 .row-1 {
   display: flex;
@@ -101,13 +110,18 @@ body {
   justify-content: space-around;
 }
 .choice {
-  width: 10rem;
-  font-size: 2rem;
-  border: solid 2px greenyellow;
+  width: 11rem;
+  height: 5rem;
+  font-size: 1.3rem;
+  border: solid 2px brown;
   padding: 1rem;
   margin: 2rem;
   color: white;
   border-radius: 1rem;
+  text-align: center;
+  transition: all 0.2s;
+  // transform: translateY(10%);
+  // justify-content: center;
   cursor: pointer;
 }
 
@@ -116,6 +130,7 @@ body {
 }
 
 #next-btn {
+  position: fixed;
   font-size: 2.5rem;
   color: black;
   background-color: skyblue;
@@ -126,11 +141,14 @@ body {
   text-align: center;
   outline: none;
   cursor: pointer;
-  transform: translate(100%, 200%);
+  right: 0;
+  bottom: 0;
+  transform: translate(-40%, -100%);
+  // transform: translate(100%, 300%);
 }
 
 .choice:hover {
-  box-shadow: 5px 4px 2px yellow;
+  box-shadow: 5px 4px 2px rgb(159, 159, 1);
   transform: scale(1.1);
 }
 
@@ -140,8 +158,8 @@ body {
 
 #end {
   width: 30vw;
-  height: 50vh;
-  transform: translate(110%, 50%);
+  height: 60vh;
+  transform: translate(110%, 30%);
   text-align: center;
   background-color: rgb(44, 42, 42);
   padding: 1rem;
@@ -149,6 +167,7 @@ body {
   flex-direction: column;
   align-items: center;
   display: none;
+  border-radius: 0.5rem;
 }
 
 .thanks {
