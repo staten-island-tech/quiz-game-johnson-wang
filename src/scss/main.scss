@@ -118,7 +118,7 @@ body {
   justify-content: space-around;
 }
 .choice {
-  width: 13rem;
+  width: 14rem;
   height: 5rem;
   font-size: 1.35rem;
   border: solid 2px brown;
@@ -220,10 +220,21 @@ body {
   }
 
   .quiz-game{
-    width: 60%;
+    width: 65%;
+  }
+  
+  .row-1{
+    width: 50vw;
   }
 
+  .row-2{
+    width: 50vw;
+  }
   .choice{
-    width: 14rem;
+    width: 16rem;
+  }
+
+  #end{
+    width: 50vw;
   }
 }
