@@ -11,6 +11,10 @@ body {
   background: url("../img//back.jpg");background-size: cover;
 
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   // object-fit: cover;
 
 }
@@ -18,7 +22,7 @@ body {
 #landing {
   width: 30vw;
   height: 60vh;
-  transform: translate(110%, 30%);
+  // transform: translate(110%, 30%);
   text-align: center;
   background-color: rgb(44, 42, 42);
   // background-color: ;
@@ -61,16 +65,16 @@ body {
 }
 
 #quiz-game {
-  width: 30vw;
-  height: 60vh;
-  transform: translate(110%, 30%);
+  width: 50%;
+  height: 66%;
+  // transform: translate(50%, 20%);
   text-align: center;
   background-color: rgb(44, 42, 42);
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  // justify-content: space-around;
+  justify-content: space-around;
   display: none;
   border-radius: 0.5rem;
 }
@@ -91,10 +95,10 @@ body {
   color: white;
 }
 
-#choices {
+// #choices {
   // justify-content: center;
-  transform: translateY(30%);
-}
+  // transform: translateY(30%);
+// }
 .row-1 {
   display: flex;
   flex-direction: row;
@@ -110,9 +114,9 @@ body {
   justify-content: space-around;
 }
 .choice {
-  width: 11rem;
+  width: 13rem;
   height: 5rem;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   border: solid 2px brown;
   padding: 1rem;
   margin: 2rem;
@@ -130,7 +134,8 @@ body {
 }
 
 #next-btn {
-  position: fixed;
+  // position: fixed;
+  // bottom: 0;
   font-size: 2.5rem;
   color: black;
   background-color: skyblue;
@@ -141,9 +146,9 @@ body {
   text-align: center;
   outline: none;
   cursor: pointer;
-  right: 0;
-  bottom: 0;
-  transform: translate(-40%, -100%);
+  // right: 0;
+  // bottom: 0;
+  // transform: translate(-40%, -100%);
   // transform: translate(100%, 300%);
 }
 
@@ -159,7 +164,7 @@ body {
 #end {
   width: 30vw;
   height: 60vh;
-  transform: translate(110%, 30%);
+  // transform: translate(110%, 30%);
   text-align: center;
   background-color: rgb(44, 42, 42);
   padding: 1rem;

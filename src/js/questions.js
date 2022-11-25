@@ -10,7 +10,7 @@ const questions = [
      "Humans were created from tree trunks",
       "Humans were created from Nun",
        "Humans were created after the eye of Re separated from him "],
-    answer: "Humans were created after the eye of a Re separated from him ",
+    answer: "Humans were created after the eye of Re separated from him ",
   },
   {
     question: "3. Re gave birth to the twins: Shu and Tefnut. Which of the following represents or is best associated with these two gods?",
